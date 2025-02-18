@@ -1,0 +1,11 @@
+# Eclipse関連の設定ファイル
+.settings/
+.classpath
+.project
+
+# ビルド関連のファイル（EclipseやMaven、Gradleで使われる）
+build/
+
+# 他に無視したいファイルやディレクトリを追加できます
+*.log           # ログファイルを無視
+*.tmp           # 一時ファイルを無視
