@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center; /* 中央寄せ */
+    margin: 2px 0; /* 余白を設定 */
+}
+/*  */
+.StartBoard {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    margin:5px 0; /* 余白を設定 */
+}
+
+.OthelloBoard {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 400px;  /* 幅を固定 */
+    height: 400px; /* 高さを固定 */
+}
+
+
+
+.OthelloBoard td {
+    background-color: darkgreen;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;  /* 横方向の中央寄せ */
+    vertical-align: middle; /* 縦方向の中央寄せ */
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 0;  /* 内部の余白をリセット */
+}
+
+
+.OthelloBoard th,
+.OthelloBoard td {
+    width: 50px;  /* 幅を固定 */
+    height: 50px; /* 高さを固定 */
+    text-align: center; /* 中央寄せ */
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid black;
+    
+}
+/* ボタンに対する設定 */
+.button {
+    text-align: center; /* 中央寄せ */
+    margin-top: 20px;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.button form {
+    display: inline-block;
+}
+
+.message {
+    text-align: center; /* 中央寄せ */
+    margin-top: 20px;
+    font-size: 18px;
+    margin: 5px 0; /* 余白を設定 */
+}
+
+.OthelloBoard td img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* 画像がセルに収まるように */
+    object-position: center; /* 画像を中央に配置 */
+}
+
+.OthelloBoard td .piece-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;   /* paddingやborderの影響を含める */
+}
+
+.OthelloBoard td.empty {
+    background-color: darkgreen;
+}
+
+#resultDisplay {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center; /* 中央寄せ */
+	line-height:10px;
+	margin:0px; /* 余白を無くす */
+}
